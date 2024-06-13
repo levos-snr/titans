@@ -4,7 +4,7 @@
 
 #Phase 0
 
-- [ ] - CLI commands
+- [] - CLI commands
 - [ ] - Git and Github
 - [ ] - Html
 - [ ] - CSS
