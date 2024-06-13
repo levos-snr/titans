@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Elements Example</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      header,
+      footer {
+        background-color: #f8f8f8;
+        padding: 10px;
+      }
+      section {
+        margin: 20px 0;
+      }
+    </style>
+    <script>
+      function showAlert() {
+        alert("Button clicked!");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>HTML5 Elements Example</h1>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a> | <a href="#about">About</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="home">
+        <h2>Welcome to the HTML5 Elements Example Page</h2>
+        <p>This page demonstrates the usage of various HTML5 elements.</p>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>This section contains different HTML5 elements grouped logically.</p>
+      </section>
+
+      <section id="content">
+        <article>
+          <h2>Sample Article</h2>
+          <p>
+            This is a sample article to show the
+            <code>&lt;article&gt;</code> tag.
+          </p>
+        </article>
+
+        <aside>
+          <p>This is an aside, useful for side content.</p>
+        </aside>
+
+        <div>
+          <p>
+            This is a <code>&lt;div&gt;</code> element containing a span:
+            <span style="color: red">red text</span>.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Lists</h3>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+        </ol>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>Tables</h3>
+        <table>
+          <caption>
+            Sample Table
+          </caption>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h3>Forms</h3>
+        <form>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="car">Choose a car:</label>
+            <select id="car" name="car">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+          </fieldset>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" rows="4" cols="50"></textarea>
+
+          <label for="browsers">Choose your browser from the list:</label>
+          <input list="browsers" id="browser" name="browser" />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>
+          </datalist>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <section>
+        <h3>Media</h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <video width="320" height="240" controls>
+          <source src="movie.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+
+        <embed src="file.pdf" width="600" height="400" />
+
+        <object data="movie.swf" width="400" height="400">
+          <param name="autoplay" value="true" />
+        </object>
+      </section>
+
+      <section>
+        <h3>Graphics</h3>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+
+        <svg width="100" height="100">
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="green"
+            stroke-width="4"
+            fill="yellow"
+          />
+        </svg>
+
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mi>x</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <mo>-</mo>
+                <mi>b</mi>
+                <mo>&#xB1;</mo>
+                <msqrt>
+                  <msup>
+                    <mi>b</mi>
+                    <mn>2</mn>
+                  </msup>
+                  <mo>-</mo>
+                  <mn>4</mn>
+                  <mo>&#x22C5;</mo>
+                  <mi>a</mi>
+                  <mo>&#x22C5;</mo>
+                  <mi>c</mi>
+                </msqrt>
+              </mrow>
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x22C5;</mo>
+                <mi>a</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+        </math>
+      </section>
+
+      <section>
+        <h3>Interactive Elements</h3>
+        <details>
+          <summary>More Info</summary>
+          <p>This is the hidden content.</p>
+        </details>
+
+        <button type="button" onclick="showAlert()">Click Me!</button>
+      </section>
+
+      <section>
+        <h3>Text Elements</h3>
+        <p>
+          Here is some text with a <mark>highlighted</mark> portion and a time
+          element: <time datetime="2023-06-13T08:00">June 13, 2023</time>.
+        </p>
+      </section>
+
+      <section>
+        <h3>Other Elements</h3>
+        <iframe src="https://www.example.com" width="600" height="400"></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Website</p>
+    </footer>
+  </body>
+</html>
