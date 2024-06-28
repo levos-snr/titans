@@ -6,29 +6,13 @@
     <title>Titan || Day 4</title>
 
     <!-- link to external css -->
-    <link rel="stylesheet" href="./styles.css" type="css/styles" />
-    <style>
-      * {
-        /* color: blue; */
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        color: green;
-        border: 1px solid black;
-        padding: 5px;
-        margin: 15px;
-        text-align: center;
-
-        /* homework  */
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!-- this is a commrnt -->
 
     <!-- Header -->
-    <section>
+    <section id="header">
       <h1 id="header-title">Daily News Blog</h1>
       <p class="header-par">More Information, More Knowledge</p>
     </section>
@@ -37,39 +21,45 @@
     <!-- Blog -->
 
     <section>
-      <h2>News Blog</h2>
+      <h2 id="news-blog">News Blog</h2>
       <!-- parent div -->
-      <div>
+      <div class="parent-div">
         <!-- specific blog -->
-        <div>
-          <h4>Kenya To Host Two Major International Conferences</h4>
+        <div class="specific-blog">
           <img
             src="https://d3eeke16mv0lt7.cloudfront.net/sites/default/files/styles/article_hero_image/public/field/image/alexandre-pellaes-6vajp0pscx0-unsplash.jpg?itok=iDzlPr_l"
             alt="Kenya Conference"
             width="30%"
           />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            dolorem id temporibus architecto, ex accusamus at ad eligendi
-            ducimus consectetur porro quibusdam ipsam ratione voluptatum quaerat
-            quas quae fugiat quidem!
-          </p>
+          <div class="blog">
+            <h4>Kenya To Host Two Major International Conferences</h4>
 
-          <!-- href  inside ,outside :Load side inside outside -->
-          <a
-            href="https://www.citizen.digital/business/kenya-to-host-two-major-international-conferences-n343863"
-            >Read More</a
-          >
-          <p>Author: Mark Alvin<span>Published Date: 22-09-2023</span></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              dolorem id temporibus architecto, ex accusamus at ad eligendi
+              ducimus consectetur porro quibusdam ipsam ratione voluptatum
+              quaerat quas quae fugiat quidem!
+            </p>
+            <!-- href  inside ,outside :Load side inside outside -->
+            <a
+              href="https://www.citizen.digital/business/kenya-to-host-two-major-international-conferences-n343863"
+              >Read More</a
+            >
+            <p>Author: Mark Alvin<span>Published Date: 22-09-2023</span></p>
+          </div>
+
+          <!--types of styling flex , float,grid,inline,block -->
         </div>
         <hr />
 
-        <div>
-          <h4>
+        <div class="specific-blog">
+           <img src="./name.webp" alt="Toyota Car" width="30%" />
+           <div class="blog">
+            <h4>
             Toyota Apologises For Cheating In Safety Tests, Halts Shipment Of
             Fielder, Axio Models
           </h4>
-          <img src="./name.webp" alt="Toyota Car" width="30%" />
+         
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
             dolorem id temporibus architecto, ex accusamus at ad eligendi
@@ -84,6 +74,7 @@
           >
           <p>Author: Viniita<span>Published Date: 18-09-2023</span></p>
         </div>
+          </div>
       </div>
     </section>
   </body>

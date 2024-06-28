@@ -1,7 +1,0 @@
-with open('/home/levos-snr/Development/phase-0/titans/abdul.txt', 'w') as file:
-    file.write('hoppy')
-
-hoppy = {
-    eating,
-    cooking
-}
